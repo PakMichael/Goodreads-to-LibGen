@@ -1,0 +1,18 @@
+{
+
+  "description": "Adds a libgen link to all titles on Goodreads",
+  "manifest_version": 2,
+  "name": "libReads",
+  "version": "1.3",
+  "icons": {
+    "512": "icons/goodreads.png"
+  },
+
+  "content_scripts": [
+    {
+		"matches": ["*://*.goodreads.com/*"],
+      "js": ["libReads.js"]
+    }
+  ]
+
+}
